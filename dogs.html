@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BarkBuddies | Dogs</title>
+    <link rel="stylesheet" href="dogs.css" />
+  </head>
+  <body>
+    <header>
+      <h2><a href="home.html">BarkBuddies</a></h2>
+      <div class="theme">
+        <div>
+          <img
+            onclick="changeTheme('sun')"
+            id="moon"
+            src="./images/moon.svg"
+            alt="moon" />
+          <img
+            onclick="changeTheme('moon')"
+            id="sun"
+            src="./images/sun.svg"
+            alt="sun" />
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="intro">
+        <h2>Available Dogs for Adoption</h2>
+        <p>
+          Find your new best friend among these adorable dogs waiting for their
+          Companion!
+        </p>
+        <p>Click on a card to learn more about them.</p>
+      </div>
+
+      <section id="container">
+        <div id="cards" class="cards"></div>
+      </section>
+
+      <div
+        onclick="hideModal()"
+        class="modal-background"
+        id="modalBackground"></div>
+
+      <div id="dogModal" class="modal">
+        <div class="modal-content">
+          <span onclick="hideModal()" class="close">&times;</span>
+          <img id="modalDogImage" src="" alt="Dog" />
+          <div id="modalDogInfo">
+            <p id="modalDogName"></p>
+            <p id="modalDogAge"></p>
+            <p id="modalDogBreed"></p>
+          </div>
+        </div>
+        <div><button class="btn" onclick="navigate()">Adopt</button></div>
+      </div>
+    </main>
+    <footer>
+      <div class="title">
+        <h2>BarkBuddies</h2>
+        <p>Privacy / Terms of Use / Cookie preferences</p>
+      </div>
+      <div class="socials">
+        <div class="soc-links">
+          <div class="soc-con">
+            <div class="soc-icon"><img src="/images/fb.svg" alt="fb" /></div>
+            <div class="soc-icon">
+              <img src="/images/insta.svg" alt="insta" />
+            </div>
+            <div class="soc-icon">
+              <img src="/images/twitter.svg" alt="twitter" />
+            </div>
+          </div>
+        </div>
+        <p>&copy; 2024 BarkBuddies. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="dogs.js"></script>
+  </body>
+</html>

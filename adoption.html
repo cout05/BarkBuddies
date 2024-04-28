@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BarkBuddies | Adoption Application</title>
+    <link rel="stylesheet" href="adoption.css" />
+  </head>
+  <body>
+    <header>
+      <div class="back">
+        <a href="dogs.html">Back</a>
+      </div>
+      <div class="theme">
+        <div>
+          <img
+            onclick="changeTheme('sun')"
+            id="moon"
+            src="./images/moon.svg"
+            alt="moon" />
+          <img
+            onclick="changeTheme('moon')"
+            id="sun"
+            src="./images/sun.svg"
+            alt="sun" />
+        </div>
+      </div>
+    </header>
+
+    <div class="form-container">
+      <form id="adoption-form" action="#" method="post">
+        <div class="step">
+          <h2>Adoption Application</h2>
+          <p>
+            🎉 Congratulations on choosing your new furry companion from
+            BarkBuddies! To proceed with the adoption process, please provide
+            the following information.
+          </p>
+
+          <button class="next-button in">Okay</button>
+        </div>
+
+        <div class="step">
+          <h2>Confirm Dog Adoption</h2>
+          <p class="details">Confirm if this is the dog you want to adopt.</p>
+          <div class="dog-info">
+            <div>
+              <label for="dog_photo">Dog's Photo:</label>
+              <img id="img" src="./images/dog1.jpg" alt="dog-img" />
+            </div>
+
+            <div>
+              <p>Name: <span id="name">Doge</span></p>
+              <p>Age: <span id="age">1month</span></p>
+              <p>Breed: <span id="breed">Shiba inu</span></p>
+            </div>
+          </div>
+
+          <div class="btn">
+            <button class="next-button">Confirm</button>
+          </div>
+        </div>
+
+        <div class="step">
+          <h2>Step 1: Personal Information</h2>
+          <p class="details">Provide the name of the owner.</p>
+          <label for="first_name">First Name:</label>
+          <input
+            type="text"
+            id="first_name"
+            name="first_name"
+            placeholder="Enter your first name"
+            required />
+
+          <label for="last_name">Last Name:</label>
+          <input
+            type="text"
+            id="last_name"
+            name="last_name"
+            placeholder="Enter your last name"
+            required />
+
+          <div class="btn">
+            <button class="prev-button">Previous</button>
+            <button class="next-button">Next</button>
+          </div>
+        </div>
+
+        <div class="step">
+          <h2>Step 2: Contact Information</h2>
+          <p class="details">
+            Provide your contact information, this is where we'll contact you.
+          </p>
+          <label for="email">Your Email:</label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Enter your email address"
+            required />
+
+          <label for="phone">Your Phone:</label>
+          <input
+            type="text"
+            id="phone"
+            name="phone"
+            placeholder="Enter your phone number"
+            required />
+
+          <label for="address">Your Address:</label>
+          <textarea
+            id="address"
+            name="address"
+            rows="4"
+            placeholder="Enter your address"
+            required></textarea>
+          <div class="btn">
+            <button class="prev-button">Previous</button>
+            <button class="next-button">Next</button>
+          </div>
+        </div>
+
+        <div class="step">
+          <h2>Step 3: Home Information</h2>
+          <p class="details">Tell us what type of house you have.</p>
+          <label for="home_type">Type of Home:</label>
+          <select id="home_type" name="home_type" required>
+            <option value="" disabled selected>Select Type</option>
+            <option value="House">House</option>
+            <option value="Apartment/Condo">Apartment/Condo</option>
+            <option value="Farm">Farm</option>
+            <option value="Other">Other</option>
+          </select>
+
+          <label for="pets_in_home">Other Pets in Home:</label>
+          <input
+            type="text"
+            id="pets_in_home"
+            name="pets_in_home"
+            placeholder="Enter other pets in your home" />
+
+          <label for="time_alone"
+            >How Long Will the Dog Be Alone Each Day:</label
+          >
+          <input
+            type="text"
+            id="time_alone"
+            name="time_alone"
+            placeholder="Enter time the dog will be alone" />
+
+          <div class="btn">
+            <button class="prev-button">Previous</button>
+            <button class="next-button">Next</button>
+          </div>
+        </div>
+
+        <div class="step">
+          <h2>Step 4: Experience with Pets</h2>
+          <p class="details">
+            Tell us if you have experience of taking care other pets.
+          </p>
+          <label for="experience_with_pets">Experience with Pets:</label>
+          <textarea
+            id="experience_with_pets"
+            name="experience_with_pets"
+            rows="4"
+            placeholder="Describe your experience with pets"></textarea>
+          <div>
+            <label for="additional_info">Additional Information:</label>
+            <textarea
+              id="additional_info"
+              name="additional_info"
+              rows="4"
+              placeholder="Enter any additional information"></textarea>
+          </div>
+
+          <div class="btn">
+            <button class="prev-button">Previous</button>
+            <button class="next-button">Submit</button>
+          </div>
+        </div>
+        <div class="step">
+          <h2>Thank You!</h2>
+          <p>
+            Your adoption application has been submitted successfully. We'll be
+            in touch with you soon 🙇‍♂️.
+          </p>
+        </div>
+      </form>
+    </div>
+
+    <script src="adoption.js"></script>
+  </body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BarkBuddies</title>
+    <link rel="stylesheet" href="home.css" />
+  </head>
+  <body>
+    <header>
+      <h2>BarkBuddies</h2>
+
+      <div>
+        <img
+          onclick="toggleNav()"
+          id="menu"
+          class="menu"
+          src="./images/menu.svg"
+          alt="menu" />
+        <div id="mobile-nav" class="mobile-nav">
+          <div class="navBar">
+            <div class="profile">
+              <div class="po">
+                <div class="pfp"></div>
+                <p class="name"></p>
+              </div>
+
+              <button onclick="logout()" class="logout">Logout</button>
+            </div>
+            <nav>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#dogs">Featured Dogs</a></li>
+                <li class="p">
+                  <a onmouseover="drop()" onmouseleave="out()" href="#"
+                    >Profile</a
+                  >
+                  <div
+                    onmouseover="drop()"
+                    onmouseleave="out()"
+                    id="dd"
+                    class="dd">
+                    <div class="d-profile">
+                      <div class="pfp"></div>
+                      <p class="name"></p>
+                    </div>
+                    <hr />
+                    <div class="opt">
+                      <p>View Profile</p>
+                      <p>Settings</p>
+                      <p onclick="logout()" class="logout">Logout</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="theme">
+              <div>
+                <p id="theme-txt" class="theme-txt">Dark mode:</p>
+                <img
+                  onclick="changeTheme('sun')"
+                  id="moon"
+                  src="./images/moon.svg"
+                  alt="moon" />
+                <img
+                  onclick="changeTheme('moon')"
+                  id="sun"
+                  src="./images/sun.svg"
+                  alt="sun" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="hero-txt">
+        <h1>Find Your PAWrfect Companion</h1>
+        <p>Explore our selection of dogs. Find your perfect companion today!</p>
+        <a href="dogs.html" class="btn">Adopt Now</a>
+      </div>
+      <div class="hero-border">
+        <img id="dog" class="dog" src="./images/b.png" alt="dog" />
+      </div>
+    </section>
+
+    <section id="about" class="about-section">
+      <h2>What We Offer</h2>
+      <div class="about">
+        <div class="box">
+          <div class="img-con">
+            <img
+              class="about-icon"
+              src="./images/delivery.svg"
+              alt="delivery" />
+          </div>
+
+          <h3>Safe Delivery</h3>
+          <p>
+            We ensure the safe delivery of your new furry friend right to your
+            doorstep.
+          </p>
+        </div>
+        <div class="box">
+          <div class="img-con">
+            <img class="about-icon" src="./images/vaccine.svg" alt="delivery" />
+          </div>
+
+          <h3>Fully Vaccinated</h3>
+          <p>
+            All our dogs are fully vaccinated, ensuring their health and
+            well-being.
+          </p>
+        </div>
+        <div class="box">
+          <div class="img-con">
+            <img class="about-icon" src="./images/paper.svg" alt="delivery" />
+          </div>
+
+          <h3>Legal Documentation</h3>
+          <p>
+            Our dogs come with all the necessary legal papers, making the
+            adoption process hassle-free.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="dogs" class="featured-dogs">
+      <h2>Featured Dogs</h2>
+      <div class="cards">
+        <div class="card">
+          <img
+            src="./images/dog1.jpg"
+            alt="dog"
+            style="width: 150px; height: 150px" />
+          <div class="card-info">
+            <p class="name">Doge Normal</p>
+            <p>A normal sweet and fluffy dog.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="./images/dog2.jpg"
+            alt="dog"
+            style="width: 150px; height: 150px" />
+          <div class="card-info">
+            <p class="name">Doge Cool</p>
+            <p>A cool and awesome dog.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="./images/dog3.jpg"
+            alt="dog"
+            style="width: 150px; height: 150px" />
+          <div class="card-info">
+            <p class="name">Doge Girl</p>
+            <p>A beautiful and pretty looking dog.</p>
+          </div>
+        </div>
+      </div>
+      <a class="btn" href="dogs.html">See more ...</a>
+    </section>
+
+    <footer>
+      <div class="title">
+        <h2>BarkBuddies</h2>
+        <p>Privacy / Terms of Use / Cookie preferences</p>
+      </div>
+      <div class="socials">
+        <div class="soc-links">
+          <div class="soc-con">
+            <div class="soc-icon"><img src="/images/fb.svg" alt="fb" /></div>
+            <div class="soc-icon">
+              <img src="/images/insta.svg" alt="insta" />
+            </div>
+            <div class="soc-icon">
+              <img src="/images/twitter.svg" alt="twitter" />
+            </div>
+          </div>
+        </div>
+        <p>&copy; 2024 BarkBuddies. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="home.js"></script>
+  </body>
+</html>

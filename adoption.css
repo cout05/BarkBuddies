@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-bg-color: #f6d593;
+  --primary-color: #f6f1e1;
+  --secondary-color: #ed8685;
+  --Tertiary-color: #6c7a89;
+  --box-shadow-con: #5e4b25;
+  --box-shadow-button: #693938;
+  --border: #121212;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url(/images/bg.svg);
+  background-position: center;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--box-shadow-con);
+  height: 100vh;
+  transition: all 300ms;
+}
+
+header {
+  color: var(--box-shadow-con);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.back {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.back a {
+  color: var(--border);
+  text-decoration: none;
+}
+
+.back img {
+  width: 50px;
+}
+
+.theme img {
+  cursor: pointer;
+  margin: 10px 20px;
+  display: block;
+  margin-left: auto;
+  width: 30px;
+}
+
+#moon {
+  display: block;
+}
+
+#sun {
+  display: none;
+}
+
+.form-container {
+  width: 600px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.dog-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.dog-info p {
+  font-weight: 600;
+}
+
+#img {
+  border-radius: 5px;
+}
+
+.step {
+  position: relative;
+  display: none;
+  background-color: var(--primary-color);
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid var(--border);
+  box-shadow: 4px 4px var(--box-shadow-con);
+}
+
+.step img {
+  width: 200px;
+}
+
+.details {
+  color: var(--Tertiary-color);
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  outline: none;
+  border: 2px solid #121212;
+  box-shadow: 3px 3px var(--box-shadow-con);
+}
+
+button {
+  color: var(--primary-color);
+  cursor: pointer;
+  font-weight: 600;
+  background-color: var(--secondary-color);
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 2px solid #121212;
+  box-shadow: 4px 4px var(--box-shadow-button);
+}
+
+.next-button {
+  display: block;
+  margin-left: auto;
+}
+
+.btn {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.in {
+  margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+  .form-container {
+    width: 350px;
+    margin: auto;
+    padding: 0;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  .details {
+    font-size: 0.9rem;
+  }
+
+  .step {
+    padding: 20px 10px;
+  }
+
+  .step img {
+    width: 150px;
+  }
+}
