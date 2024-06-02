@@ -1,1 +1,1 @@
-##School Project
+<h1>School Project</h1>
